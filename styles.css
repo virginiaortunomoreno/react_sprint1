@@ -1,0 +1,276 @@
+body {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
+.header-container {
+    border: solid black 15px;
+}
+
+.nav {
+    background-color: grey;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.element1 {
+    background-color: red;
+    width: 15%;
+    text-align: center;
+    border: solid grey 15px;
+}
+
+.element2 {
+    background-color: red;
+    width: 70%;
+    text-align: center;
+    border: solid grey 15px;
+    border-left: 5px;
+    border-right: 5px;
+}
+
+.element3 {
+    background-color: red;
+    width: 15%;
+    text-align: center;
+    border: solid grey 15px;
+}
+
+header {
+    border-top: solid black 8px;
+}
+
+p {
+    background-color: rgb(238, 210, 132);
+    text-align: center;
+    border: solid orange 15px;
+    margin: 0;
+}
+
+.section {
+    background-color: midnightblue;
+    text-align: center;
+    border: solid black 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 807.5px;
+    float: left;
+    padding: 5px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.article1 {
+    background-color: blue;
+    border: solid midnightblue 10px;
+    width: 47%;
+}
+
+.article2 {
+    background-color: blue;
+    border: solid midnightblue 10px;
+    width: 47%;
+    padding-left: 5px;
+}
+
+.article3 {
+    background-color: blue;
+    border: solid midnightblue 10px;
+    width: 47%;
+}
+
+.article4 {
+    background-color: blue;
+    border: solid midnightblue 10px;
+    width: 47%;
+    padding-left: 5px;
+}
+
+.article5 {
+    background-color: skyblue;
+    border: solid midnightblue 10px;
+    width: 97%;
+}
+
+.aside {
+    background-color: rgb(255, 0, 0);
+    border: solid black 15px;
+    width: 327.5px;
+    float: left;
+    margin-top: 15px;
+    border-left: 0;
+    height: 118px;
+    padding: 5px;
+}
+
+.aside1{
+background-color: rgb(236, 236, 148);
+margin: 10px;
+text-align: center;
+}
+
+.aside2 {
+background-color: rgb(236, 236, 148);
+margin: 10px;
+text-align: center;
+}
+
+footer {
+    background-color: rgba(231, 162, 106, 0.932);
+    text-align: center;
+    border: solid black 15px;
+}
+
+.footer {
+    clear: both;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        margin: 20px;
+    }
+
+    .section {
+        border: solid yellow 15px;
+        margin-bottom: 0;
+        width: 688px;
+    }
+
+    .article1, .article2, .article3, .article4 {
+        width: 320px;
+    }
+
+    .aside {
+        border: solid yellow 15px;
+        border-top: 0;
+        margin-top: 0;
+        margin-bottom: 15px;
+        width: 688px;
+        height: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        margin: 20px;
+    }
+    .header-container {
+        grid-template-columns: 1fr;
+        border: solid black 20px;
+    }
+    .navegacion {
+        display: block;
+    }
+     
+    .element1 {
+         width: 87%;
+         border: solid grey 20px;
+    }
+
+    .element2 {
+        width: 87%;
+        border: solid grey 20px;
+        border-top: 0;
+    }
+
+    .element3 {
+        width: 87%;
+        border: solid grey 20px;
+        border-top: 0;
+    }
+
+    header {
+        border-top: solid black 20px;
+    }
+
+    p {
+        border: solid orange 20px;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+        border: solid yellow 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: 295px;
+        background-color: steelblue;
+        padding: 0;
+    }
+    
+    .articles {
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+    .article1 {
+        width: 87%;
+        border: solid steelblue 20px;
+        background-color: rgb(58, 197, 186);
+    }
+
+    .article2 {
+        width: 87%;
+        border: solid steelblue 20px;
+        border-top: 5px;
+        background-color: rgb(58, 197, 186);
+        padding-left: 0;
+    }
+
+    .article3 {
+        width: 87%;
+        border: solid steelblue 20px;
+        border-top: 0;
+        background-color: rgb(58, 197, 186);
+    }
+
+    .article4 {
+        width: 87%;
+        border: solid steelblue 20px;
+        border-top: 0;
+        background-color: rgb(58, 197, 186);
+        padding-left: 0;
+    }
+
+    .article5 {
+        width: 87%;
+        border: solid steelblue 20px;
+        border-top: 0;
+        background-color: rgb(171, 224, 211);
+    }
+
+    .aside {
+        border: solid yellow 20px;
+        background-color: rgb(214, 134, 14);
+        border-top: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 285px;
+        height: auto;
+    }
+
+    .aside1 {
+        background-color: orange;
+        border: solid rgb(214, 134, 14) 5px;
+        border-bottom: 0;
+    }
+
+    .aside2 {
+        background-color: orange;
+        border: solid rgb(214, 134, 14) 5px;
+        border-top: 0;
+    }
+
+    footer {
+        border: solid black 20px;
+    }
+
+}
