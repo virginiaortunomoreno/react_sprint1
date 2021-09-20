@@ -1,3 +1,7 @@
+body* {
+    box-sizing: border-box;
+}
+
 body {
     max-width: 1200px;
     margin: 15px auto;
@@ -132,33 +136,44 @@ footer {
     clear: both;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
     body {
         margin: 20px;
     }
 
     .section {
+        box-sizing: border-box;
         border: solid yellow 15px;
         margin-bottom: 0;
-        width: 688px;
+        width: 100%;
+        float: none;
     }
 
     .article1, .article2, .article3, .article4 {
-        width: 320px;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .article5 {
+        width: 100%;
     }
 
     .aside {
+        box-sizing: border-box;
         border: solid yellow 15px;
         border-top: 0;
         margin-top: 0;
         margin-bottom: 15px;
-        width: 688px;
+        width: 100%;
         height: auto;
+        float: none;
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+
+
+@media (max-width: 768px) {
 
     body {
         margin: 20px;
@@ -169,23 +184,27 @@ footer {
     }
     .navegacion {
         display: block;
+        box-sizing: border-box;
     }
      
     .element1 {
-         width: 87%;
+         width: 100%;
          border: solid grey 20px;
+         box-sizing: border-box;
     }
 
     .element2 {
-        width: 87%;
+        width: 100%;
         border: solid grey 20px;
         border-top: 0;
+        box-sizing: border-box;
     }
 
     .element3 {
-        width: 87%;
+        width: 100%;
         border: solid grey 20px;
         border-top: 0;
+        box-sizing: border-box;
     }
 
     header {
@@ -197,28 +216,33 @@ footer {
     }
 
     .section {
+        box-sizing: border-box;
         grid-template-columns: 1fr;
         border: solid yellow 20px;
         margin-top: 20px;
         margin-bottom: 0;
-        width: 295px;
+        width: 100%;
         background-color: steelblue;
         padding: 0;
+        float: none;
     }
     
     .articles {
         display: block;
         flex-wrap: nowrap;
+        
     }
 
     .article1 {
-        width: 87%;
+        box-sizing: border-box;
+        width: 100%;
         border: solid steelblue 20px;
         background-color: rgb(58, 197, 186);
     }
 
     .article2 {
-        width: 87%;
+        box-sizing: border-box;
+        width: 100%;
         border: solid steelblue 20px;
         border-top: 5px;
         background-color: rgb(58, 197, 186);
@@ -226,14 +250,16 @@ footer {
     }
 
     .article3 {
-        width: 87%;
+        box-sizing: border-box;
+        width: 100%;
         border: solid steelblue 20px;
         border-top: 0;
         background-color: rgb(58, 197, 186);
     }
 
     .article4 {
-        width: 87%;
+        box-sizing: border-box;
+        width: 100%;
         border: solid steelblue 20px;
         border-top: 0;
         background-color: rgb(58, 197, 186);
@@ -241,20 +267,23 @@ footer {
     }
 
     .article5 {
-        width: 87%;
+        box-sizing: border-box;
+        width: 100%;
         border: solid steelblue 20px;
         border-top: 0;
         background-color: rgb(171, 224, 211);
     }
 
     .aside {
+        box-sizing: border-box;
         border: solid yellow 20px;
         background-color: rgb(214, 134, 14);
         border-top: 0;
         margin-top: 0;
         margin-bottom: 20px;
-        width: 285px;
+        width: 100%;
         height: auto;
+        float: none;
     }
 
     .aside1 {
